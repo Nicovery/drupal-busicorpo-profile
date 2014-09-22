@@ -1,0 +1,9 @@
+/* line 2, ../sass/front.scss */
+.view-content h2 {
+  font-size: 1em;
+}
+
+/* line 6, ../sass/front.scss */
+.field-collection-view .field-label {
+  width: auto;
+}

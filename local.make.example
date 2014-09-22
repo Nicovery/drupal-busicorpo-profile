@@ -1,0 +1,56 @@
+; busicorpo make file for local development
+core = "7.x"
+api = "2"
+
+projects[drupal][version] = "7.x"
+; include the d.o. profile base
+includes[] = "drupal-org.make"
+
+; +++++ Libraries +++++
+
+; modernizr
+libraries[modernizr][directory_name] = "modernizr"
+libraries[modernizr][type] = "library"
+libraries[modernizr][destination] = "libraries"
+libraries[modernizr][download][type] = "get"
+libraries[modernizr][download][url] = "" ; TODO add download URI
+
+; tinymce
+libraries[tinymce][directory_name] = "tinymce"
+libraries[tinymce][type] = "library"
+libraries[tinymce][destination] = "libraries"
+libraries[tinymce][download][type] = "get"
+libraries[tinymce][download][url] = "" ; TODO add download URI
+
+; kcfinder
+libraries[kcfinder][directory_name] = "kcfinder"
+libraries[kcfinder][type] = "library"
+libraries[kcfinder][destination] = "libraries"
+libraries[kcfinder][download][type] = "get"
+libraries[kcfinder][download][url] = "" ; TODO add download URI
+
+; backbone
+libraries[backbone][directory_name] = "backbone"
+libraries[backbone][type] = "library"
+libraries[backbone][destination] = "libraries"
+libraries[backbone][download][type] = "get"
+libraries[backbone][download][url] = "" ; TODO add download URI
+
+; underscore
+libraries[underscore][directory_name] = "underscore"
+libraries[underscore][type] = "library"
+libraries[underscore][destination] = "libraries"
+libraries[underscore][download][type] = "get"
+libraries[underscore][download][url] = "" ; TODO add download URI
+
+; jquery.cycle
+libraries[jquery.cycle][directory_name] = "jquery.cycle"
+libraries[jquery.cycle][type] = "library"
+libraries[jquery.cycle][destination] = "libraries"
+libraries[jquery.cycle][download][type] = "get"
+libraries[jquery.cycle][download][url] = "" ; TODO add download URI
+
+; +++++ Patches +++++
+
+projects[ais][patch][] = "ais.htaccess.patch" ; TODO add path to patch
+
